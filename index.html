@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" sizes="96x96" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="player-content">
+            <div class="cover-container" id="cover-container">
+            </div>
+            <div class="song-info">
+                <h2 id="song-title" class="song-info__title"></h2>
+                <h3 id="song-artist" class="song-info__artist"></h3>
+            </div>
+            <div class="duration-container">
+                <div class="time-container">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+            <div class="actions-container">
+                <div class="prev-container">
+                    <button id="prev-button">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.8136 14.2517L23.6953 10.9841C25.0284 10.2435 26.6666 11.2074 26.6666 12.7324V19.2676C26.6666 20.7926 25.0284 21.7566 23.6953 21.016L17.8136 17.7483C16.442 16.9863 16.442 15.0137 17.8136 14.2517Z"
+                                fill="#4D5562" />
+                            <path d="M10.6666 22.6667L10.6666 9.33335" stroke="#4D5562" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M5.33325 22.6667L5.33325 9.33335" stroke="#4D5562" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="play-container">
+                    <button id="play-button" class="play-btn">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.941 14.244L14.119 10.236C12.686 9.50176 11 10.5696 11 12.2115V19.7885C11 21.4304 12.686 22.4982 14.119 21.764L21.941 17.756C23.353 17.0325 23.353 14.9675 21.941 14.244Z"
+                                fill="#E5E7EB" />
+                        </svg>
+                    </button>
+                    <button id="pause-button" class="pause-btn hidden">
+                        <svg width="16" height="16" viewBox="0 0 17 19" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 6.54013e-07H4.75V19H0V6.54013e-07Z" />
+                            <path d="M11.4 0H16.15V19H11.4V0Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="next-container">
+                    <button id="next-button">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.1864 14.2517L8.30466 10.9841C6.9716 10.2435 5.33337 11.2074 5.33337 12.7324V19.2676C5.33337 20.7926 6.9716 21.7566 8.30466 21.016L14.1864 17.7483C15.558 16.9863 15.558 15.0137 14.1864 14.2517Z"
+                                fill="#4D5562" />
+                            <path d="M21.3334 22.6667L21.3334 9.33335" stroke="#4D5562" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M26.6667 22.6667L26.6667 9.33335" stroke="#4D5562" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="playlist">
+            <h2 class="playlist__title">Música De Siempre</h2>
+            <div class="playlist__controls">
+                <div class="playlist__buttons">
+                    <button class="playlist__button active" id="sort-all">All</button>
+                    <button class="playlist__button" id="sort-salsa">Salsa</button>
+                    <button class="playlist__button" id="sort-boleros">Boleros</button>
+                </div>
+                <div class="playlist__list-container">
+                    <ul id="playlist-songs" class="playlist__list">
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
