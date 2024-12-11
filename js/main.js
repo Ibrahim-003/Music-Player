@@ -171,7 +171,12 @@ audio.addEventListener("timeupdate", () => {
 });
 
 audio.addEventListener("ended", () => {
-  playNextSong();
+    const songsLength = userData?.songs.length;
+    if (userData?.currentSong.id === userData.songs[songsLength - 1].id) {
+        playSong(userData?.songs[0].id);
+    }else {
+        playNextSong();
+    }
 });
 
 // ACTIONS EVENTS
