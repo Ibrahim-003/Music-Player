@@ -10,13 +10,15 @@ export const sortSong = (songList) => {
   return songList;
 };
 
-export const getCurrentSongIndex = userData => {
-    return userData?.songs.indexOf(userData?.currentSong);
-}
+export const getCurrentSongIndex = (userData) => {
+  return userData?.songs.indexOf(userData?.currentSong);
+};
 
 export const formatTime = (seconds) => {
-    const minutes = Math.floor(seconds/60);
-    const secs = Math.floor(seconds%60);
+  const minutes = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
 
-    return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-}
+  return `${minutes.toString().padStart(2, "0")}:${secs
+    .toString()
+    .padStart(2, "0")}`;
+};
