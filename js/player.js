@@ -1,3 +1,4 @@
+import { changeActionVisibility } from "./events.js";
 import { hightlightCurrentSong, setPlayerDisplay } from "./playlist.js";
 import { getCurrentSongIndex, formatTime } from "./utils.js";
 
@@ -76,5 +77,6 @@ export const initializePlayer = (userData) => {
   const firstSong = userData.songs[0];
   if (firstSong) {
     playSong(firstSong.id, userData);
+    changeActionVisibility("play");
   }
 };
