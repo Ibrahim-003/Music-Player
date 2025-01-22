@@ -1,4 +1,4 @@
-# Music Player App
+<h1 style="text-align: center;">Music Player App</h1>
 
 ## Descripción
 
@@ -28,7 +28,7 @@ Puedes ver la versión demo en vivo aquí: [Movie Search App](https://music-play
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/Ibrahim-003/reproductor-musica.git
+    git clone https://github.com/Ibrahim-003/Music-Player.git
     ```
 
 2. Navega al directorio del proyecto:
@@ -61,10 +61,6 @@ Puedes ver la versión demo en vivo aquí: [Movie Search App](https://music-play
 3. Haz clic en el botón de reproducción para comenzar a reproducir la canción seleccionada.
 4. Usa los controles de reproducción para pausar, reproducir o navegar a la siguiente canción.
 5. La barra de progreso se actualizará automáticamente para reflejar el tiempo transcurrido y la duración total de la canción.
-
-## Licencia 📄
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
 ## Autor 👨‍💻
 
