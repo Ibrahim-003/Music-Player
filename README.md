@@ -16,7 +16,7 @@ Este proyecto es un reproductor de música web que permite a los usuarios reprod
 
 ![Captura del Proyecto](./src/assets/images/desktop-preview.webp)
 
-Puedes ver la versión demo en vivo aquí: [Movie Search App](https://music-player-chi-six.vercel.app/)
+Puedes ver la versión demo en vivo aquí: [Music Player](https://music-player-chi-six.vercel.app/)
 
 ## Tecnologías Usadas
 
